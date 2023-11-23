@@ -136,6 +136,10 @@ return [
             // 'users' => [
             //     'filterableAttributes'=> ['id', 'name', 'email'],
             // ],
+            'documents' => [
+                'filterableAttributes' => ['body', 'created_at'],
+                'sortableAttributes' => ['body', 'created_at'],
+            ],
         ],
     ],
 

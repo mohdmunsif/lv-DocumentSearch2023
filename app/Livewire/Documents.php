@@ -41,7 +41,7 @@ class Documents extends Component
     public function confirmDelete(int $id)
     {
         $this->idToDelete = $id;
-        $this->dispatchBrowserEvent('show-delete-modal');
+        $this->dispatch('show-delete-modal');
     }
 
     public function destroy()
@@ -52,7 +52,7 @@ class Documents extends Component
         }
 
         Document::destroy($this->idToDelete);
-        $this->dispatchBrowserEvent('hide-delete-modal');
+        $this->dispatch('hide-delete-modal');
         $this->render();
     }
 }
