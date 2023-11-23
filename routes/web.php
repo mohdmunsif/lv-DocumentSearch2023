@@ -37,3 +37,10 @@ Route::get('documents/download/{id}', [DocumentController::class, 'download'])
     ->middleware('auth');
 
 Route::resource('documents', DocumentController::class)->middleware('auth');
+
+
+Route::get('/counter', function () {
+    return view('counter', [
+        // 'users' => User::all(),
+    ]);
+});
