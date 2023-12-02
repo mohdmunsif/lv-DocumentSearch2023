@@ -1,14 +1,11 @@
-@extends('layouts.app')
-
-@section('content')
-    <div>
-        <div class="h-96">Scroll down...</div>
-        <div class="h-96"></div>
-    </div>
-
-    <h2 class="text-lg font-semibold">Standard Contact Form</h2>
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            Counter
+        </h2>
+    </x-slot>
 
     <livewire:counter />
 
     <hr>
-@endsection
+</x-app-layout>
