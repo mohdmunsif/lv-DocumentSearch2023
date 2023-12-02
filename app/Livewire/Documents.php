@@ -26,12 +26,12 @@ class Documents extends Component
 
             $documents = Document::search($this->term)
                 ->orderBy('created_at', 'DESC')
-                ->paginate(5);
+                ->paginate(2);
         } else {
 
             $documents = Document::with('user')
                 ->orderBy('created_at', 'DESC')
-                ->paginate(5);
+                ->paginate(2);
         }
 
         // dd($documents);
