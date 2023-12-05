@@ -14,7 +14,9 @@
         "laravel/scout": "^10.5",
         "laravel/tinker": "^2.8",
         "livewire/livewire": "^3.0",
-        "meilisearch/meilisearch-php": "^1.5"
+        "meilisearch/meilisearch-php": "^1.5",
+        "phpoffice/phpword": "^1.1",
+        "smalot/pdfparser": "^2.7"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.9",
